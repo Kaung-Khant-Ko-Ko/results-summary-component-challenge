@@ -180,4 +180,38 @@ p {
   border-radius: 30px;
   color: hsl(221, 100%, 96%);
   font-size: 18px;
+  border: 0px;
+}
+
+.continue-btn:hover {
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  cursor: pointer;
+}
+
+.clicked {
+  background-image: linear-gradient(
+    180deg,
+    hsl(241, 81%, 54%),
+    hsl(252, 100%, 67%)
+  ) !important;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 0px;
+  }
+
+  .result-card {
+    border-radius: 0px 0px 30px 30px;
+  }
 }

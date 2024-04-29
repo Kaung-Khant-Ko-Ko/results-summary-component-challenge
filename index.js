@@ -23,3 +23,11 @@ fetch("./data.json")
     document.querySelector("#vis-score").innerHTML =
       data[3].score + "<span class='total'> / 100</span>";
   });
+
+document.querySelector(".continue-btn").addEventListener("click", function () {
+  var btn = document.querySelector(".continue-btn");
+  btn.classList.add("clicked");
+  setTimeout(function () {
+    btn.classList.remove("clicked");
+  }, 100);
+});
