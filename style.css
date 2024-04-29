@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+
+p {
+  margin: 0px;
+}
+
+.card {
+  width: 740px;
+  height: 510px;
+
+  margin: 10% auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.result-card {
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 30px;
+}
+
+.result-container {
+  width: 250px;
+  height: 399px;
+  margin: 15% auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-title {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.result-score {
+  width: 205px;
+  height: 205px;
+  background-image: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.percent {
+  font-size: 70px;
+  font-weight: 800;
+  color: hsl(221, 100%, 96%);
+}
+
+.result {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(221, 100%, 96%);
+}
+
+.result-desc {
+  text-align: center;
+}
+
+.summary-container {
+  width: 300px;
+  height: 399px;
+  margin: 15% auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary-title {
+  font-size: 27px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.score-list {
+  display: grid;
+  gap: 10px;
+}
+
+.score {
+  height: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+
+  border-radius: 10px;
+  padding: 1px;
+  outline: 1px solid hsl(241, 100%, 89%);
+  outline-offset: -1px;
+  mask: conic-gradient(at 10px 10px, #0000 75%, #000 0) 0 0 / calc(100% - 10px)
+      calc(100% - 10px),
+    linear-gradient(#000 0 0) content-box;
+}
+
+.react,
+.memo,
+.verb,
+.vis {
+  justify-self: start;
+  padding-left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.score-1 {
+  background-color: hsla(0, 100%, 67%, 5%);
+}
+
+#react-text {
+  color: hsl(0, 100%, 67%);
+}
+
+.score-2 {
+  background-color: hsla(39, 100%, 56%, 5%);
+}
+
+#memo-text {
+  color: hsl(39, 100%, 56%);
+}
+
+.score-3 {
+  background-color: hsla(166, 100%, 37%, 5%);
+}
+
+#verb-text {
+  color: hsl(166, 100%, 37%);
+}
+
+.score-4 {
+  background-color: hsla(234, 85%, 45%, 5%);
+}
+
+#vis-text {
+  color: hsl(234, 85%, 45%);
+}
+
+#react-score,
+#memo-score,
+#verb-score,
+#vis-score {
+  color: hsl(224, 30%, 27%);
+  padding-right: 10px;
+}
+
+.total {
+  color: grey;
+}
+
+.continue-btn {
+  height: 60px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  color: hsl(221, 100%, 96%);
+  font-size: 18px;
+}

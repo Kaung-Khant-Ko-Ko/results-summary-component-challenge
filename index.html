@@ -12,6 +12,15 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
@@ -21,7 +30,7 @@
           <p class="result-title">Your Result</p>
           <div class="result-score">
             <p class="percent">76</p>
-            <p class="total">of 100</p>
+            <p>of 100</p>
           </div>
           <p class="result">Great</p>
           <p class="result-desc">
@@ -33,38 +42,39 @@
         <div class="summary-container">
           <p class="summary-title">Summary</p>
           <div class="score-list">
-            <div class="score">
+            <div class="score score-1">
               <div class="react">
                 <img src="" alt="Reaction icon" id="react-icon" />
-                <p>Reaction</p>
+                <span id="react-text"></span>
               </div>
-              <p class="react-score">/ 100</p>
+              <p id="react-score"><span class="total">/ 100</span></p>
             </div>
-            <div class="score">
+            <div class="score score-2">
               <div class="memo">
                 <img src="" alt="Memory icon" id="memo-icon" />
-                <p>Memory</p>
+                <span id="memo-text">Memory</span>
               </div>
-              <p class="memo-score">/ 100</p>
+              <p id="memo-score"><span class="total">/ 100</span></p>
             </div>
-            <div class="score">
+            <div class="score score-3">
               <div class="verb">
                 <img src="" alt="Verbal icon" id="verb-icon" />
-                <p>Verbal</p>
+                <span id="verb-text">Verbal</span>
               </div>
-              <p class="verb-score">/ 100</p>
+              <p id="verb-score"><span class="total">/ 100</span></p>
             </div>
-            <div class="score">
+            <div class="score score-4">
               <div class="vis">
                 <img src="" alt="Visual icon" id="vis-icon" />
-                <p>Visual</p>
+                <span id="vis-text">Visual</span>
               </div>
-              <p class="vis-score">/ 100</p>
+              <p id="vis-score"><span class="total">/ 100</span></p>
             </div>
           </div>
           <button type="button" class="continue-btn">Continue</button>
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
